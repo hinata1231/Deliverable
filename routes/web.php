@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Teacher_IntroduceController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,6 +12,4 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function() {
-    return view('posts.classe');
-});
+Route::get('/', [Teacher_IntroduceController::class, 'teacher_introduce']);
