@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\QueryException; 
 
 
-class Student_ClassSeeder extends Seeder
+class Student_LessonSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -17,7 +17,7 @@ class Student_ClassSeeder extends Seeder
      */
     public function run()
     {
-         DB::table('student_classes')->insert([
+         DB::table('student_lessons')->insert([
             'created_at'=> new DateTime(),
             'updated_at'=> new DateTime(),
             
