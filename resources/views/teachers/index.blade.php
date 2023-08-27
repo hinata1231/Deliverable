@@ -12,16 +12,16 @@
     </head>
     <body class="antialiased">
        <h1>先生の紹介</h1>
-       <div class='posts'>
-            @foreach($posts as $post)
-               <div class='post'>
-                 <h2 class='title'>{{ $post->title }}</h2>
-                  <p class='body'>{{ $post->body }}</p>
+       <div class='teachers'>
+            @foreach($teachers as $teacher)
+               <div class='teacher'>
+                 <h2 class='name'>{{ $teacher->name }}</h2>
+                  <p class='gender'>{{ $teacher->gender }}</p>
                </div>
             @endforeach
        </div>
        <div class='paginate'>
-            {{ $posts->links() }}
+            {{ $teachers->links() }}
         </div>
     </body>
 </html>

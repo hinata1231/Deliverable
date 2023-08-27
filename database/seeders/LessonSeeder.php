@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use DateTime;
 
-class ClassSeeder extends Seeder
+class LessonSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,7 +16,7 @@ class ClassSeeder extends Seeder
      */
     public function run()
     {
-         DB::table('classes')->insert([
+         DB::table('lessons')->insert([
             'zoom_url'=>'4567382837',
             'student_id' =>1,
             'teacher_id' =>1,
