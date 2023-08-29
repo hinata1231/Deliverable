@@ -13,17 +13,15 @@
     <body class="antialiased">
        <h1>My_Path 日本語教室（にほんごきょうしつ）</h1>
        <div class='lessons'>
-            @foreach($lessons as $lesson)
-               <div class='lesson'>
-                 <h2 class=''>{{ $teacher->name }}</h2>
-                  <p class='gender'>{{ $teacher->gender }}</p>
-               </div>
-            @endforeach
+           <div class='lesson'>
+              <h3 class='title'>一か月のカレンダー</h3>
+            　<h3 class='title'>一週間のカレンダー</h3>
+              <h3 class='title'> 授業登録</h3>
+              <h3 class='title'>先生からのお知らせ</h3>
+              <h3 class='title'>先生の紹介</h3>
+           </div>
+           
        </div>
-       <div class='paginate'>
-            {{ $teachers->links() }}
-        </div>
     </body>
 </html>
-
 
