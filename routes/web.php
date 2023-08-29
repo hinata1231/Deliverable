@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TeacherController;
-use App\Http\Controllers\ClassController;
+use App\Http\Controllers\LessonController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,4 +14,4 @@ use App\Http\Controllers\ClassController;
 |
 */
 Route::get('/teacher', [TeacherController::class, 'index']);
-Route::get('/lesson', [ClassController::class, 'index']);
+Route::get('/lesson', [LessonController::class, 'index']);

@@ -24,7 +24,7 @@ class TeacherSeeder extends Seeder
             'password'=>Hash::make('password') ,
             'gender'=>1,
             'age'=>20,
-            //'sentence'=>400,
+            'sentence'=>400,
             'created_at'=> new DateTime(),
             'updated_at'=> new DateTime(),
             ]);
