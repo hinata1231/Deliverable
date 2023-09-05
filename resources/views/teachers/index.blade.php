@@ -23,6 +23,9 @@
        <div class='paginate'>
             {{ $teachers->links() }}
         </div>
+         <div class="footer">
+            <a href="/lesson">戻る</a>
+        </div>
     </body>
 </html>
 

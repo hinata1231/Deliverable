@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\LessonController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,4 +15,8 @@ use App\Http\Controllers\LessonController;
 |
 */
 Route::get('/teacher', [TeacherController::class, 'index']);
+Route::get('/teachers/create', [TeacherController::class, 'create']);
+Route::get('/teachers/index', [TeacherController::class, 'index']);
 Route::get('/lesson', [LessonController::class, 'index']);
+Route::get('/lessons/create', [LessonController::class, 'create']);
+Route::get('/lessons/{lesson}', [LessonController::class ,'show']);

@@ -16,12 +16,15 @@
            <div class='lesson'>
               <h3 class='title'>一か月のカレンダー</h3>
             　<h3 class='title'>一週間のカレンダー</h3>
-              <h3 class='title'> 授業登録</h3>
-              <h3 class='title'>先生からのお知らせ</h3>
-              <h3 class='title'>先生の紹介</h3>
+            　@foreach($lessons as $lesson)
+            　{{$lesson->id}}
+            　@endforeach
+            　<a href=''><h5 class='title'>start</h5></a>
+             <a href='/lessons/create'><h3 class='title'> 授業登録</h3></a>
+             <a href='/teachers/create'><h3 class='title'>先生からのお知らせ</h3></a>
+              <a href='/teachers/index'><h3 class='title'>先生の紹介</h3></a>
            </div>
            
        </div>
     </body>
 </html>
-

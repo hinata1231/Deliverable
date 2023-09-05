@@ -28,5 +28,27 @@ class TeacherSeeder extends Seeder
             'created_at'=> new DateTime(),
             'updated_at'=> new DateTime(),
             ]);
+             
+        DB::table('teachers')->insert([
+            'name'=> 'teacher2',
+            'email'=>'teacher2@gmail',
+            'password'=>Hash::make('password') ,
+            'gender'=>2,
+            'age'=>20,
+            'sentence'=>400,
+            'created_at'=> new DateTime(),
+            'updated_at'=> new DateTime(),
+            ]);
+        
+        DB::table('teachers')->insert([
+            'name'=> 'teacher3',
+            'email'=>'teacher3@gmail',
+            'password'=>Hash::make('password') ,
+            'gender'=>1,
+            'age'=>20,
+            'sentence'=>400,
+            'created_at'=> new DateTime(),
+            'updated_at'=> new DateTime(),
+            ]);
     }
 }
