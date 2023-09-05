@@ -20,7 +20,7 @@ return new class extends Migration
             $table->foreignId('teacher_id')->constrained();
             $table->string('zoom_url' , 200);
             $table->integer('illegular')->nullable();
-            $table->date('date')->nullable();
+            $table->timestamp('datetime')->nullable();
             $table->integer('day')->nullable();
             $table->timestamps();
         });

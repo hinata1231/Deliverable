@@ -12,6 +12,11 @@ class TeacherController extends Controller
     {
        return view('teachers/index')->with(['teachers' => $teacher->getPaginateByLimit(1)]); 
     }
+    
+    public function create()
+   {
+    return view('teachers.create');
+   }
 
 }
 
