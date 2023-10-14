@@ -20,16 +20,36 @@ class StudentSeeder extends Seeder
     {
         
         DB::table('students')->insert([
-            'name'=> 'teacher1',
-            'email'=>'teacher1@gmail',
+            'name'=> 'student1',
+            'email'=>'student1@gmail',
             'password'=>Hash::make('password') ,
             'gender'=>1,
             'age'=>20,
             'teacher_id'=>1,
             'created_at'=> new DateTime(),
             'updated_at'=> new DateTime(),
-             
-        
+            ]);
+            
+        DB::table('students')->insert([
+            'name'=> 'student2',
+            'email'=>'student2@gmail',
+            'password'=>Hash::make('password') ,
+            'gender'=>1,
+            'age'=>20,
+            'teacher_id'=>1,
+            'created_at'=> new DateTime(),
+            'updated_at'=> new DateTime(),
+            ]);
+            
+        DB::table('students')->insert([
+            'name'=> 'student3',
+            'email'=>'student3@gmail',
+            'password'=>Hash::make('password') ,
+            'gender'=>1,
+            'age'=>20,
+            'teacher_id'=>1,
+            'created_at'=> new DateTime(),
+            'updated_at'=> new DateTime(),
             ]);
     }
 }

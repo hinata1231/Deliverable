@@ -10,6 +10,9 @@
 
        
     </head>
+<x-teacher-layout>
+    <x-slot name="main-page">
+      </x-slot>  
     <body class="antialiased">
        <h1>先生の紹介</h1>
        <div class='teachers'>
@@ -24,9 +27,9 @@
             {{ $teachers->links() }}
         </div>
          <div class="footer">
-            <a href="/lesson">戻る</a>
+            <a href="/teacher/lesson">戻る</a>
         </div>
     </body>
+</x-teacher-layout>
 </html>
-
 
