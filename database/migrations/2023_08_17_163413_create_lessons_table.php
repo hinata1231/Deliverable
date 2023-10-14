@@ -21,7 +21,6 @@ return new class extends Migration
             $table->string('zoom_url' , 200);
             $table->integer('illegular')->nullable();
             $table->timestamp('datetime')->nullable();
-            $table->integer('day')->nullable();
             $table->timestamps();
         });
     }

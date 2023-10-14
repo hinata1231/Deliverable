@@ -11,20 +11,22 @@
        
     </head>
     <body class="antialiased">
-       <h1>My_Path 日本語教室（にほんごきょうしつ）</h1>
+       <h1>My_Path 日本語教室（にほんごきょうしつ）先生用</h1>
        <div class='lessons'>
            <div class='lesson'>
-              <h3 class='title'>一か月のカレンダー</h3>
-            　<h3 class='title'>一週間のカレンダー</h3>
+              <h3 class='monthcalender'>一か月のカレンダー</h3>
+            　<h3 class='weekcalender'>一週間のカレンダー</h3>
             　@foreach($lessons as $lesson)
-            　{{$lesson->id}}
+            　{{$lesson->datetime}}
+            　<button class="bg-sky-500/100"><a href='/teacher/lessons/{{$lesson->id}}'><h5 class='switch'>start</h5></a></button>
             　@endforeach
-            　<a href=''><h5 class='title'>start</h5></a>
-             <a href='/lessons/create'><h3 class='title'> 授業登録</h3></a>
-             <a href='/teachers/create'><h3 class='title'>先生からのお知らせ</h3></a>
-              <a href='/teachers/index'><h3 class='title'>先生の紹介</h3></a>
+              <button class="bg-sky-500/100"><a href='/teacher/lessons/create'><h3 class='registration'> 授業登録</h3></a></button>
+              <button class="bg-lime-700"><a href='/teacher/comment'><h3 class='comment'>先生からのお知らせ</h3></a></button>
+              <button class="bg-sky-500/100"><a href='/teacher/member'><h3 class='introduction'>先生の紹介</h3></a></button>
+               {{ Auth::user()->name }}
            </div>
-           
-       </div>
+        </div>
     </body>
 </html>
+
+

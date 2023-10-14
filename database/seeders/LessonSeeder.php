@@ -22,7 +22,6 @@ class LessonSeeder extends Seeder
             'teacher_id' =>1,
             'illegular'=>1,
             'datetime' => date('2023-01-01 19:00:00'),
-            'day'=>1,
             'created_at'=> new DateTime(),
             'updated_at'=> new DateTime(),
             
@@ -34,7 +33,6 @@ class LessonSeeder extends Seeder
             'teacher_id' =>2,
             'illegular'=>1,
             'datetime' => date('2023-01-06 19:00:00'),
-            'day'=>1,
             'created_at'=> new DateTime(),
             'updated_at'=> new DateTime(),
             
@@ -46,7 +44,6 @@ class LessonSeeder extends Seeder
             'teacher_id' =>3,
             'illegular'=>1,
             'datetime' => date('2023-01-08 20:00:00'),
-            'day'=>1,
             'created_at'=> new DateTime(),
             'updated_at'=> new DateTime(),
             
@@ -59,7 +56,6 @@ class LessonSeeder extends Seeder
             'teacher_id' =>1,
             'illegular'=>1,
             'datetime' => date('2023-01-10 22:00:00'),
-            'day'=>1,
             'created_at'=> new DateTime(),
             'updated_at'=> new DateTime(),
             
@@ -72,7 +68,6 @@ class LessonSeeder extends Seeder
             'teacher_id' =>2,
             'illegular'=>1,
             'datetime' => date('2023-01-12 22:00:00'),
-            'day'=>1,
             'created_at'=> new DateTime(),
             'updated_at'=> new DateTime(),
             
@@ -85,7 +80,6 @@ class LessonSeeder extends Seeder
             'teacher_id' =>3,
             'illegular'=>1,
             'datetime' => date('2023-01-20 20:00:00'),
-            'day'=>1,
             'created_at'=> new DateTime(),
             'updated_at'=> new DateTime(),
             
@@ -98,7 +92,6 @@ class LessonSeeder extends Seeder
             'teacher_id' =>1,
             'illegular'=>1,
             'datetime' => date('2023-01-23 21:00:00'),
-            'day'=>1,
             'created_at'=> new DateTime(),
             'updated_at'=> new DateTime(),
             
@@ -111,7 +104,6 @@ class LessonSeeder extends Seeder
             'teacher_id' =>2,
             'illegular'=>1,
             'datetime' => date('2023-01-25 19:00:00'),
-            'day'=>1,
             'created_at'=> new DateTime(),
             'updated_at'=> new DateTime(),
             
@@ -124,7 +116,6 @@ class LessonSeeder extends Seeder
             'teacher_id' =>3,
             'illegular'=>1,
             'datetime' => date('2023-01-27 19:00:00'),
-            'day'=>1,
             'created_at'=> new DateTime(),
             'updated_at'=> new DateTime(),
             
@@ -137,7 +128,6 @@ class LessonSeeder extends Seeder
             'teacher_id' =>1,
             'illegular'=>1,
             'datetime' => date('2023-01-30 20:00:00'),
-            'day'=>1,
             'created_at'=> new DateTime(),
             'updated_at'=> new DateTime(),
             
